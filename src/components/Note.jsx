@@ -79,7 +79,7 @@ const Note = ({ mode, content, todos, setTodos, id, checked, date }) => {
           onClick={handleClickOpen}
           id="note-icon"
           src={editIcon}
-          className="w-5 cursor-pointer"
+          className="w-5 cursor-pointer color"
           alt="edit"
         />
         <img

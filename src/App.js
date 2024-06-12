@@ -48,7 +48,7 @@ function App() {
   return (
     <>
       <div className={`${mode && "dark"}`}>
-        <div className="h-[100vh] duration-200 dark:bg-blackColor">
+        <div className="min-h-screen flex justify-center items-center duration-200 dark:bg-blackColor pb-10">
           <div className="md:container">
             <div className="relative flex flex-col md:items-center pt-24 gap-5">
               <div className="title uppercase font-bold text-2xl font-quicksand-bold duration-200 dark:text-white text-center">
