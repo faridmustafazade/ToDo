@@ -3,6 +3,7 @@ import searchIcon from "../Assets/Images/search-outline.svg";
 import sunIcon from "../Assets/Images/sunny-outline.svg";
 import moonIcon from "../Assets/Images/moon-outline.svg";
 const Search = ({ mode, setMode, setFilter, setSearchQuery }) => {
+  console.log(mode);
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value);
   };
