@@ -21,10 +21,7 @@ const Note = ({ mode, content, todos, setTodos, id, checked, date }) => {
   return (
     <div
       id="notes"
-      className={`px-4 md:px-0 flex items-center md:justify-evenly justify-between mb-4 font-quicksand-semibold
-      dark:text-white duration-200
-      ${checked ? "text-[#25252580] dark:text-purpleColor" : ""}
-      `}
+      className="px-4 md:px-0 flex items-center md:justify-evenly justify-between mb-4 font-quicksand-semibold dark:text-white duration-200"
     >
       <div className="flex items-center w-[80%]">
         <div className="w-[65%] flex gap-3 items-center">
@@ -34,11 +31,21 @@ const Note = ({ mode, content, todos, setTodos, id, checked, date }) => {
             onClick={(e) => handleSubmit(e)}
             className="w-[10%] h-7"
           />
-          <p className="w-[80%] md:text-xl text-base break-words overflow-wrap word-break">
+          <p
+            className={`w-[80%] md:text-xl text-base break-words overflow-wrap word-break
+            duration-200
+                ${checked && "text-[#25252580] dark:text-purpleColor"}
+          `}
+          >
             {content}
           </p>
         </div>
-        <p className="text-center w-[35%] md:text-xl text-base">
+        <p
+          className={`text-center w-[35%] md:text-xl text-base 
+          duration-200
+              ${checked && "text-[#25252580] dark:text-purpleColor"}
+        `}
+        >
           {new Date(date).toLocaleString("en-US", {
             hour12: false,
             minute: "numeric",
