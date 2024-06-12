@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Quicksand */
+@font-face {
+  font-family: quicksand-bold;
+  src: url("./Assets/Fonts/Quicksand/static/Quicksand-Bold.ttf");
+}
+@font-face {
+  font-family: quicksand-semibold;
+  src: url("./Assets/Fonts/Quicksand/static/Quicksand-SemiBold.ttf");
+}
+@font-face {
+  font-family: quicksand-regular;
+  src: url("./Assets/Fonts/Quicksand/static/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: quicksand-medium;
+  src: url("./Assets/Fonts/Quicksand/static/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: quicksand-light;
+  src: url("./Assets/Fonts/Quicksand/static/Quicksand-Light.ttf");
+}
+
+#note-icon {
+  visibility: hidden;
+}
+#notes:hover #note-icon {
+  visibility: visible;
+}
